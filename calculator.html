@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .calc{
+            border: 3px solid gray;
+            width: 500px;
+            border-radius: 20%;
+            display: grid;
+            grid-template-columns: auto auto auto auto ;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+        .items{
+            background-color: rgb(7, 7, 7);
+            color: white;
+            border: 3px solid gray;
+            padding: 20px;
+            text-align: center;
+            border-radius: 20%;
+
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;background-color: coral;width: 200px;">Calculator</h1>
+    <div style="background-color: rgb(226, 167, 167);" class="calc">
+                
+                <div style="background-color: cadetblue;text-align: left;"class="items item1">999999999</div>
+                <div class="items">C</div>
+                <div class="items">%</div>
+                <div class="items">x</div>
+                <div class="items">/</div>
+                <div class="items">7</div>
+                <div class="items">8</div>
+                <div class="items">9</div>
+                <div class="items">*</div>
+                <div class="items">4</div>
+                <div class="items">5</div>
+                <div class="items">6</div>
+                <div class="items">_</div>
+                <div class="items">1</div>
+                <div class="items">2</div>
+                <div class="items">3</div>
+                <div class="items">+</div>
+                <div class="items">00</div>
+                <div class="items">0</div>
+                <div class="items">.</div>
+                <div style="background-color: red;border-radius: 50%;" class="items">=</div>
+        
+    </div>
+</body>
+</html>
