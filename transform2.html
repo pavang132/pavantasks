@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: absolute;
+            left: 400px;
+            top:20px;
+            display: inline-block;
+            background-color: rgb(54, 184, 184);
+            border: 2px solid;
+
+            padding: 50px;
+        }
+        input[value="skew1"]:checked~.box{
+            transform: scale(1,2);
+        }
+        input[value="skew2"]:checked~.box{
+            transform: skewx(20deg);
+        }
+        input[value="skew3"]:checked~.box{
+            transform: translate(none);
+        }
+        input[value="skew4"]:checked~.box{
+            transform: rotateX(100deg);
+        }
+        input[value="skew5"]:checked~.box{
+              transform: skewY(40deg);
+        }
+        input[value="skew6"]:checked~.box{
+            transform: rotateY(65deg);
+        }
+        input[value="skew7"]:checked~.box{
+            transform: rotateY(80deg);
+        }
+        input[value="skew8"]:checked~.box{
+            transform: skew(40deg);
+        }
+        input[value="skew9"]:checked~.box{
+            transform: skew(45deg);
+        }
+        input[value="skew10"]:checked~.box{
+            transform: skew(30deg);
+        }
+        input[value="skew11"]:checked~.box{
+            transform: skewX(40deg);
+        }
+        input[value="skew12"]:checked~.box{
+            transform: skewY(30deg);
+        }
+        input[value="skew13"]:checked~.box{
+            transform: skewY(40deg);
+        }
+        input[value="skew14"]:checked~.box{
+            transform: scale(2,2);
+        }
+        lable{
+            border: 2px solid;
+            background-color: gray;
+            padding: 5px;
+
+        }
+        .tr{
+            border: 2px solid gray;
+            height: 1200px;
+            width: 600px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body style="background-color: lightblue;border: 20px solid gray;">
+    <div class="tr"><br><br>
+    <input type="radio"value="skew1" name="transform"/>
+    <lable> Transform:none;</lable><br><br>
+    <input type="radio" value="skew2" name="transform"/>
+    <lable>transform rotate(10 deg)</lable><br><br>
+    <input type="radio"value="skew3"name="transform"/>
+    <lable>transform rotate(45deg)</lable><br><br>
+    <input type="radio"value="skew4"name="transform"/>
+    <lable>transform rotateX(45deg)</lable><br><br>
+    <input type="radio"value="skew5"name="transform"/>
+    <lable>transform rotateX(45deg)</lable><br><br>
+    <input type="radio"value="skew6"name="transform"/>
+    <lable>transform rotateY(80deg)</lable><br><br>
+    <input type="radio"value="skew7"name="transform"/>
+    <lable>transform rotateY(80deg)</lable><br><br>
+    <input type="radio"value="skew8"name="transform"/>
+    <lable>transform skew(20deg 20deg)</lable><br><br>
+    <input type="radio"value="skew9"name="transform"/>
+    <lable>transform skew (30deg 30deg)</lable><br><br>
+    <input type="radio"value="skew10"name="transform"/>
+    <lable>transform skewx(30deg)</lable><br><br>
+    <input type="radio"value="skew11"name="transform"/>
+    <lable>transform skewX(40deg)</lable><br><br>
+    <input type="radio"value="skew12"name="transform"/>
+    <lable>transform skewY(30deg)</lable><br><br>
+    <input type="radio"value="skew13"name="transform"/>
+    <lable>transform skewY(40deg)</lable><br><br>
+    <input type="radio"value="skew14"name="transform"/>
+    <lable>transform skewY(40deg)</lable><br><br>
+    <input type="radio"value="skew15"name="transform"/>
+    <lable>transform translate(20px 20px)</lable>
+    <div class="box">1</div>
+</div>
+    
+    
+    
+   </div> 
+</body>
+</html>
